@@ -18,7 +18,7 @@ module.exports = function(app, appSecret) {
     newUnicorn.save(function(err, data) {
       if (err) return res.status(500).send({'msg': 'could not save unicorn'});
 
-      res.json(bot);
+      res.json(data);
     });
   });
 
